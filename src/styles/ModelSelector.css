@@ -1,0 +1,63 @@
+/* Model Selector Dropdown */
+.model-selector {
+  padding: 4px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  max-width: 110px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 24px;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 480px) {
+  .model-selector {
+    max-width: 160px;
+    font-size: 12px;
+  }
+}
+
+.model-selector:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.model-selector:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.model-selector option {
+  background: #1e1e2f;
+  color: #e0e0e0;
+}
+
+/* Loading state */
+.model-selector-loading {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 4px 8px;
+}
+
+/* Retry button */
+.model-selector-retry {
+  padding: 4px 10px;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  font-size: 11px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.model-selector-retry:hover {
+  background: rgba(239, 68, 68, 0.25);
+}
